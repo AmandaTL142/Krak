@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="ordnet constructers i Person-objekt - bortset fra Id,&#10;den kunne jeg ikke">
+    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="login funktion fjernet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/service/HobbyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/service/HobbyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/api/HobbyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/api/HobbyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/entity/Hobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/entity/Hobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/dto/HobbyResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/dto/HobbyResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/entity/Hobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/entity/Hobby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/service/HobbyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/service/HobbyService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +78,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -97,9 +106,9 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <envs>
-        <env name="JDBC_DATABASE_URL" value="jdbc:mysql://20.223.194.5:3306/krak" />
-        <env name="JDBC_USERNAME" value="root" />
-        <env name="JDBC_PASSWORD" value="123456" />
+        <env name="JDBC_DATABASE_URL" value="jdbc:mysql://localhost:3306/krak" />
+        <env name="JDBC_USERNAME" value="andrea" />
+        <env name="JDBC_PASSWORD" value="1" />
       </envs>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,6 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SecurityApplication" />
+        <item itemvalue="Spring Boot.SecurityApplication" />
         <item itemvalue="Spring Boot.SecurityApplication" />
         <item itemvalue="Spring Boot.SecurityApplication" />
       </list>
@@ -126,6 +137,8 @@
       <workItem from="1647000114338" duration="1618000" />
       <workItem from="1647003705435" duration="537000" />
       <workItem from="1647419766160" duration="947000" />
+      <workItem from="1647520662884" duration="1611000" />
+      <workItem from="1647755159330" duration="1402000" />
     </task>
     <task id="LOCAL-00001" summary="Added me as Member">
       <created>1646388410010</created>
@@ -169,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647428043799</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="tilføjet 2 dependencies i maven, der løser 'entityManagerFactory fejlen">
+      <created>1647517996150</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1647517996150</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Client4xxException">
+      <created>1647595829336</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647595829336</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +224,8 @@
     <MESSAGE value="ordnet constructers i PersonResponse" />
     <MESSAGE value="ordnet constructers i PersonResponse - bortset fra Id,&#10;den kunne jeg ikke" />
     <MESSAGE value="ordnet constructers i Person-objekt - bortset fra Id,&#10;den kunne jeg ikke" />
-    <option name="LAST_COMMIT_MESSAGE" value="ordnet constructers i Person-objekt - bortset fra Id,&#10;den kunne jeg ikke" />
+    <MESSAGE value="tilføjet 2 dependencies i maven, der løser 'entityManagerFactory fejlen" />
+    <MESSAGE value="Client4xxException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client4xxException" />
   </component>
 </project>

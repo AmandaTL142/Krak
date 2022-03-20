@@ -1,18 +1,18 @@
 package backend.entity;
 
 import backend.dto.HobbyRequest;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Getter
 @Setter
+@ToString
 //@AllArgsConstructor
 @NoArgsConstructor
 
@@ -24,8 +24,8 @@ public class Hobby {
     String category;
     String inOut;
 
-   /* @OneToMany
-    HobbyInfo hobbyInfo;*/
+    /*@OneToMany(mappedBy = "hobbyWithInfo")
+    private Set<HobbyInfo> hobbies = new HashSet<>();*/
 
 
     public Hobby(HobbyRequest body){
