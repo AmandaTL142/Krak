@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="login funktion fjernet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/service/HobbyService.java" afterDir="false" />
+    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="fjernet connection til lokal DB i application properties">
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/entity/HobbyInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyInfoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/service/HobbyInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/api/HobbyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/api/HobbyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/entity/Hobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/entity/Hobby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/dto/HobbyResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/dto/HobbyResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/entity/Hobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/entity/Hobby.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/service/HobbyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/service/HobbyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/entity/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +21,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="main" />
+    <option name="BRANCH" value="HobbyObject" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -79,6 +77,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647595829336</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fjernet connection til lokal DB i application properties">
+      <created>1647758466351</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1647758466351</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +232,7 @@
     <MESSAGE value="ordnet constructers i Person-objekt - bortset fra Id,&#10;den kunne jeg ikke" />
     <MESSAGE value="tilføjet 2 dependencies i maven, der løser 'entityManagerFactory fejlen" />
     <MESSAGE value="Client4xxException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client4xxException" />
+    <MESSAGE value="fjernet connection til lokal DB i application properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="fjernet connection til lokal DB i application properties" />
   </component>
 </project>

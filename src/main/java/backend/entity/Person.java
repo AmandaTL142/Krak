@@ -1,16 +1,21 @@
 package backend.entity;
 
+import lombok.*;
 import backend.dto.PersonRequest;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Getter
 @Setter
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 public class Person {
@@ -43,5 +48,16 @@ public class Person {
         this.lastName = lastName;
         this.phone = phone;
     }
+
+    @OneToMany(mappedBy = "hasHobbies", fetch = FetchType.EAGER)
+    @Setter(AccessLevel.NONE)
+    @Getter(AccessLevel.NONE)
+
+    private Set<HobbyInfo> hobbyInfos = new HashSet<>();
+
+    public void addHobby(HobbyInfo hi){
+        hobbyInfos.add(hi);
+    }
+
 }
 

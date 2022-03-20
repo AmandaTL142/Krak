@@ -4,6 +4,7 @@ import backend.dto.HobbyRequest;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.HashSet;
@@ -24,9 +25,6 @@ public class Hobby {
     String category;
     String inOut;
 
-    /*@OneToMany(mappedBy = "hobbyWithInfo")
-    private Set<HobbyInfo> hobbies = new HashSet<>();*/
-
 
     public Hobby(HobbyRequest body){
         this.name = body.getName();
@@ -41,5 +39,26 @@ public class Hobby {
         this.category = category;
         this.inOut = inOut;
     }
+    @OneToMany(mappedBy = "hobbyObject", fetch = FetchType.EAGER)
 
+    @Setter(AccessLevel.NONE)
+    @Getter(AccessLevel.NONE)
+
+    private Set<HobbyInfo> hobbyInfos = new HashSet<>();
+
+    public void addHobbyInfos(HobbyInfo hi){
+        hobbyInfos.add(hi);
+    }
+
+    /*
+       @OneToMany(mappedBy = "reservedCar", fetch = FetchType.EAGER)
+    // Removes the Getter & Setter for this
+    @Setter(AccessLevel.NONE)
+    @Getter(AccessLevel.NONE)
+
+    private Set<Reservation> reservations = new HashSet<>();
+
+    public void addResevertaion (Reservation res){
+        reservations.add(res);
+    }*/
 }
