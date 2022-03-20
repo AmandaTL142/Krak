@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="fjernet connection til lokal DB i application properties">
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyInfoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyInfoResponse.java" afterDir="false" />
+    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="HobbyInfo service opsat">
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/api/HobbyInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/repository/PersonRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/service/HobbyInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/service/HobbyInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647758466351</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="HobbyInfo service opsat">
+      <created>1647763764046</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1647763764046</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +238,7 @@
     <MESSAGE value="tilføjet 2 dependencies i maven, der løser 'entityManagerFactory fejlen" />
     <MESSAGE value="Client4xxException" />
     <MESSAGE value="fjernet connection til lokal DB i application properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="fjernet connection til lokal DB i application properties" />
+    <MESSAGE value="HobbyInfo service opsat" />
+    <option name="LAST_COMMIT_MESSAGE" value="HobbyInfo service opsat" />
   </component>
 </project>
