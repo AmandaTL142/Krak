@@ -13,15 +13,4 @@ import java.util.List;
 @RequestMapping("api/personalHobbies")
 public class HobbyInfoController {
 
-    HobbyInfoService;
-
-    @GetMapping
-    public List<HobbyInfoResponse> getHobbies() {
-        return HobbyInfoService.;
-    }
-
-    @GetMapping("/{name}")
-    public HobbyResponse getHObby(@PathVariable String name) throws Exception {
-        return hobbyService.getHobby(name);
-    }
 }

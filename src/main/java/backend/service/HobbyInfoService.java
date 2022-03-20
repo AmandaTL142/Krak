@@ -23,14 +23,6 @@ public class HobbyInfoService {
         this.personRepository=personRepository;
     }
 
-    public List<HobbyInfo> getPersonalHobbyList(String email){
-        personRepository.getById(email).get;
-
-
-        person.getEmail()
-
-        return hobbyInfoRepo.findAll();
-    }
 
     public HobbyInfoResponse getHobbyInfo(String id) throws Exception {
         return new HobbyInfoResponse(hobbyInfoRepo.findById(id).orElseThrow(()-> new Exception("Could not find Hobby")));

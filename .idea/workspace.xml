@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="HobbyInfo service opsat">
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/api/HobbyInfoController.java" afterDir="false" />
+    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="HobbyInfo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/api/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/repository/AddressRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/repository/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/api/HobbyInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/api/HobbyInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/dto/AddressRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/dto/AddressRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/dto/AddressResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/dto/AddressResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/service/AddressService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/service/HobbyInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/service/HobbyInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="HobbyInfo_feature" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -207,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647763764046</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="HobbyInfo">
+      <created>1647766641572</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647766641573</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +251,7 @@
     <MESSAGE value="Client4xxException" />
     <MESSAGE value="fjernet connection til lokal DB i application properties" />
     <MESSAGE value="HobbyInfo service opsat" />
-    <option name="LAST_COMMIT_MESSAGE" value="HobbyInfo service opsat" />
+    <MESSAGE value="HobbyInfo" />
+    <option name="LAST_COMMIT_MESSAGE" value="HobbyInfo" />
   </component>
 </project>
