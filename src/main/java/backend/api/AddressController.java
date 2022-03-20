@@ -31,7 +31,7 @@ public class AddressController {
 
     @DeleteMapping
     public void deletePersonalAddress(String email){
-        addressService.deletePersonalAddress(email)Ad;
+        addressService.deletePersonalAddress(email);
     }
 
 }
