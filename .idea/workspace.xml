@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="Client4xxException">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/error/Client4xxException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/error/Client4xxException.java" afterDir="false" />
+    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="login funktion fjernet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/service/HobbyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/api/HobbyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/api/HobbyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/entity/Hobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/entity/Hobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/dto/HobbyResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/dto/HobbyResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/entity/Hobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/entity/Hobby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/service/HobbyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/service/HobbyService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +29,12 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="HobbyRepo" />
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="HobbyObject" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,6 +138,7 @@
       <workItem from="1647003705435" duration="537000" />
       <workItem from="1647419766160" duration="947000" />
       <workItem from="1647520662884" duration="1611000" />
+      <workItem from="1647755159330" duration="1402000" />
     </task>
     <task id="LOCAL-00001" summary="Added me as Member">
       <created>1646388410010</created>

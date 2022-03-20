@@ -1,30 +1,26 @@
 package backend.api;
 
-import backend.entity.Hobby;
+import backend.dto.HobbyResponse;
 import backend.repository.HobbyRepo;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import backend.service.HobbyService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.ArrayList;
+import java.util.List;
+
 
 @RequestMapping("api/hobbies")
 public class HobbyController {
 
-    HobbyRepo hobbyRepo= new HobbyRepo();
+    HobbyService hobbyService;
 
-    @GetMapping("/hobbylist")
-    public ArrayList<Hobby> allHobbies(){
-       return hobbyRepo.getAllHobbies();
+    @GetMapping
+    public List<HobbyResponse> getHobbies (){
+        return hobbyService.getHobbies();
     }
-
-
-
-    /*public static void main(String[] args) {
-        HobbyRepo h = new HobbyRepo();
-        System.out.println(h.getAllHobbies());
-    }*/
-
-
+    @GetMapping("/{name}")
+    public HobbyResponse getHObby(@PathVariable String name) throws Exception{
+        return hobbyService.getHobby(name);
+    }
 }
