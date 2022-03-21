@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="HobbyInfo service opsat">
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/api/HobbyInfoController.java" afterDir="false" />
+    <list default="true" id="3e1c6fe5-ca6b-405f-89bc-407d5fd27e6e" name="Changes" comment="Filer tilføjes">
+      <change afterPath="$PROJECT_DIR$/src/test/java/backend/api/PersonControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/backend/repository/PersonRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/api/HobbyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/api/HobbyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/api/HobbyInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/api/HobbyInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/api/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/api/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/configuration/MakeTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/configuration/MakeTestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyInfoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/dto/HobbyInfoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/entity/HobbyInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/entity/HobbyInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyInfoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyInfoRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/repository/HobbyRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/repository/PersonRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/service/HobbyInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/service/HobbyInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/service/HobbyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/service/HobbyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/backend/service/PersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/backend/service/PersonServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/api/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/api/PersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/configuration/MakeTestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/configuration/MakeTestData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/dto/HobbyResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/dto/HobbyResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/entity/Hobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/entity/Hobby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/entity/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/entity/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/repository/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/repository/PersonRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/service/PersonService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +44,7 @@
         <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -30,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="HobbyInfo_feature" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,13 +108,106 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="backend.service" />
+      <recent name="backend.repository" />
+      <recent name="backend.api" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="backend.api" />
+      <recent name="backend.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SecurityApplication">
+    <configuration name="PersonControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="krak-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backend.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backend.api" />
+      <option name="MAIN_CLASS_NAME" value="backend.api.PersonControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonControllerTest.getPeople" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="krak-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backend.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backend.api" />
+      <option name="MAIN_CLASS_NAME" value="backend.api.PersonControllerTest" />
+      <option name="METHOD_NAME" value="getPeople" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonControllerTest.getPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="krak-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backend.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backend.api" />
+      <option name="MAIN_CLASS_NAME" value="backend.api.PersonControllerTest" />
+      <option name="METHOD_NAME" value="getPerson" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="JDBC_DATABASE_URL" value="jdbc:mysql://20.223.194.5:3306/krak" />
+        <env name="JDBC_USERNAME" value="root" />
+        <env name="JDBC_PASSWORD" value="123456" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonRepositoryTest.findPersonById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="krak-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backend.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backend.repository" />
+      <option name="MAIN_CLASS_NAME" value="backend.repository.PersonRepositoryTest" />
+      <option name="METHOD_NAME" value="findPersonById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="krak-project" />
       <extension name="coverage">
@@ -103,19 +220,27 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <envs>
-        <env name="JDBC_DATABASE_URL" value="jdbc:mysql://localhost:3306/krak" />
-        <env name="JDBC_USERNAME" value="andrea" />
-        <env name="JDBC_PASSWORD" value="1" />
+        <env name="JDBC_DATABASE_URL" value="jdbc:mysql://20.223.194.5:3306/krak" />
+        <env name="JDBC_USERNAME" value="root" />
+        <env name="JDBC_PASSWORD" value="123456" />
       </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.PersonControllerTest.getPeople" />
+      <item itemvalue="JUnit.PersonControllerTest" />
+      <item itemvalue="JUnit.PersonControllerTest.getPerson" />
+      <item itemvalue="JUnit.PersonRepositoryTest.findPersonById" />
+      <item itemvalue="Spring Boot.SecurityApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SecurityApplication" />
-        <item itemvalue="Spring Boot.SecurityApplication" />
-        <item itemvalue="Spring Boot.SecurityApplication" />
+        <item itemvalue="JUnit.PersonRepositoryTest.findPersonById" />
+        <item itemvalue="JUnit.PersonControllerTest.getPerson" />
+        <item itemvalue="JUnit.PersonControllerTest.getPeople" />
+        <item itemvalue="JUnit.PersonControllerTest" />
         <item itemvalue="Spring Boot.SecurityApplication" />
       </list>
     </recent_temporary>
@@ -136,6 +261,7 @@
       <workItem from="1647419766160" duration="947000" />
       <workItem from="1647520662884" duration="1611000" />
       <workItem from="1647755159330" duration="1402000" />
+      <workItem from="1647858309237" duration="1336000" />
     </task>
     <task id="LOCAL-00001" summary="Added me as Member">
       <created>1646388410010</created>

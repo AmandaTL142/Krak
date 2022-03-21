@@ -15,11 +15,14 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
-@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 public class Person {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    int id;
+
+
     private String email;
             //@Column(length = 320)
 
@@ -49,6 +52,14 @@ public class Person {
         this.phone = phone;
     }
 
+    public Person(String email, String firstName, String lastName, String phone, Address connectedAddress){
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.connectedAddress=connectedAddress;
+    }
+
     @OneToMany(mappedBy = "hasHobbies", fetch = FetchType.EAGER)
     @Setter(AccessLevel.NONE)
     @Getter(AccessLevel.NONE)
@@ -59,5 +70,17 @@ public class Person {
         hobbyInfos.add(hi);
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", phone='" + phone + '\'' +
+                ", connectedAddress=" + connectedAddress +
+                ", hobbyInfos=" + hobbyInfos +
+                '}';
+    }
 }
 

@@ -1,6 +1,8 @@
 package backend.api;
 
 import backend.dto.HobbyResponse;
+import backend.entity.Hobby;
+import backend.entity.HobbyInfo;
 import backend.repository.HobbyRepo;
 import backend.service.HobbyService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,13 +16,22 @@ import java.util.List;
 public class HobbyController {
 
     HobbyService hobbyService;
+    HobbyRepo hobbyRepo;
 
     @GetMapping
     public List<HobbyResponse> getHobbies (){
         return hobbyService.getHobbies();
     }
     @GetMapping("/{name}")
-    public HobbyResponse getHObby(@PathVariable String name) throws Exception{
+    public HobbyResponse getHobby(@PathVariable String name) throws Exception{
         return hobbyService.getHobby(name);
     }
+
+    //Dette endpoint returnerer den hobby, der er tilknyttet en hobbInfo. Skal nok ikke bruges, men demonstrerer metoden.
+    @GetMapping
+    public Hobby getPersonsHobbies (@PathVariable HobbyInfo hobbyInfo){
+        return hobbyRepo.findHobbyByHobbyInfos(hobbyInfo);
+    }
+
+
 }

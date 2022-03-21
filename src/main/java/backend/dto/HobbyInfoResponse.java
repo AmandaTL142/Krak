@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class HobbyInfoResponse {
 
-    String id;
+    int id;
     private LocalDateTime hobbyAdded;
 
 

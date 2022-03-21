@@ -4,10 +4,9 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -18,8 +17,10 @@ import java.time.LocalDateTime;
 public class HobbyInfo {
 
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    int id;
 
+    @CreationTimestamp
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss",shape = JsonFormat.Shape.STRING)
     LocalDateTime hobbyAdded;
 
@@ -30,8 +31,7 @@ public class HobbyInfo {
     Person hasHobbies;
 
 
-    public HobbyInfo(String id,LocalDateTime date, Hobby hobbyObject, Person hasHobbies){
-        this.hobbyAdded= date;
+    public HobbyInfo(Hobby hobbyObject, Person hasHobbies){
         this.hasHobbies=hasHobbies;
         this.hobbyObject =hobbyObject;
         hobbyObject.addHobbyInfos(this);
